@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="public/favicon.ico">
+    <title>Авторизация</title>
+</head>
+
+<body class="body">
+    <div class="container">
+        <div>
+            <img class="illustration" src="img/illustration.png">
+        </div>
+
+        <div class="rectangle">
+            <div class="authorization">
+                <h4>Авторизация</h4>
+
+                <button class="button-login-google">
+                    <div class="container-between">
+                        <img src="img/googleIcon.png" class="google-icon">
+                        <span>Войти через Google</span>
+                        <div></div>
+                    </div>
+                </button>
+
+                <div class="email-login">
+                    <hr>
+                    <span>Или через электронную почту</span>
+                    <hr>
+                </div>
+
+                <form class="form-auth">
+                    <span>Email</span>
+                    <input type="email" />
+                    <br>
+                    <span>Пароль</span>
+                    <input type="password" />
+                    <br>
+                    <div class="container" style="justify-content: space-between;">
+                        <label>
+                            <input type="checkbox">
+                            <span>Запомнить меня</span>
+                        </label>
+
+                        <label>
+                            <a href="restore-password.html">
+                                <span>Забыли пароль?</span>
+                            </a>
+                        </label>
+                    </div>
+                    <br>
+                    <input type="submit" class="button-login" value="Войти">
+                </form>
+
+                <footer style="margin-top: 30px;">
+                    <span>
+                        Ещё нет аккаунта?
+                    </span>
+
+                    <a href="registration.html">
+                        <span>Зарегистрироваться</span>
+                    </a>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

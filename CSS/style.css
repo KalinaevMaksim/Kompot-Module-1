@@ -1,0 +1,263 @@
+@font-face {
+    font-family: 'Stem';
+    src: url('font/Stem/Stem-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Stem';
+    src: url('font/Stem/Stem-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Stem';
+    src: url('font/Stem/Stem-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Stem';
+    src: url('font/Stem/Stem-SemiLight.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Stem';
+    src: url('font/Stem/Stem-ExtraLight.ttf');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Stem';
+    src: url('font/Stem/Stem-Thin.ttf');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Stem';
+    src: url('font/Stem/Stem-Regular.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('font/Poppins/Poppins-Regular.ttf');
+    font-weight: normal;
+}
+
+.body {
+    background-color: #304FFD;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.illustration {
+    width: 80%;
+    max-width: 580px;
+}
+
+.rectangle {
+    background-color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    min-width: 300px;
+    width: 35%;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.authorization {
+    display: flex;
+    width: 100%;
+    min-width: 250px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5%;
+    overflow: hidden;
+}
+
+h4 {
+    font-family: Stem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    color: #3F434A;
+}
+
+span {
+    font-family: Stem;
+    font-style: normal;
+    font-weight: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: #8A9099;
+}
+
+hr {
+    width: 100%;
+    size: 1px;
+    background: #E8E9EB;
+}
+
+a {
+    text-decoration: none;
+}
+
+a span {
+    color: #304FFD;
+}
+
+.google-icon {
+    width: 15px;
+    height: 16px;
+}
+
+input[type=submit],
+button {
+    width: 100%;
+    border-radius: 14px;
+    height: 40px;
+    background-color: #304FFD;
+    border-color: #304FFD;
+    border-style: solid;
+    color: white;
+    font-family: Stem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.button-login-google {
+    width: 100%;
+    border-radius: 14px;
+    height: 40px;
+    background-color: white;
+    border-color: #E8E9EB;
+    border-style: solid;
+    font-family: Stem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.button-login-google span {
+    color: #595F69;
+}
+
+.container-between {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email-login {
+    margin: 30px 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-login span {
+    vertical-align: middle;
+    color: #8A9099;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-family: Stem;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.form-auth {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-login {
+    width: 100%;
+    border-radius: 14px;
+    height: 40px;
+    background-color: #304FFD;
+    border-color: #304FFD;
+    border-style: solid;
+    color: white;
+}
+
+input[type=checkbox] {
+    position: absolute;
+    opacity: 0;
+}
+
+input[type=checkbox]+span {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+input[type=checkbox]+span::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 1px solid black;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    box-shadow: none;
+    transition: box-shadow 0.1s ease-in;
+}
+
+input[type=checkbox]:checked+span::before {
+    border-color: #304FFD;
+    background-color: #304FFD;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 12'%3e%3cpath fill='%23fff' d='M11.7917 1.2358C12.0798 1.53914 12.0675 2.01865 11.7642 2.30682L5.7036 8.06439C5.40574 8.34735 4.93663 8.34134 4.64613 8.05084L2.22189 5.6266C1.92604 5.33074 1.92604 4.85107 2.22189 4.55522C2.51774 4.25937 2.99741 4.25937 3.29326 4.55522L5.19538 6.45734L10.7206 1.20834C11.024 0.920164 11.5035 0.93246 11.7917 1.2358Z'/%3e%3c/svg%3e");
+}
+
+input[type=checkbox]:not(:checked):hover+span:before,
+input[type=checkbox]:not(:checked)+span:hover:before {
+    border-color: #b3d7ff;
+}
+
+input[type=checkbox]:active+span:before,
+input[type=checkbox]+span:active:before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    height: 40px;
+    border-radius: 14px;
+    background-color: white;
+    border-color: #E8E9EB;
+    border-style: solid;
+    font-family: Stem;
+}
+
+@media only screen and (max-width: 375px) {
+    .illustration {
+        visibility: collapse;
+        flex-basis: 0%;
+    }
+}
