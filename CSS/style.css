@@ -46,7 +46,7 @@
     font-weight: normal;
 }
 
-.body {
+body {
     background-color: #304FFD;
     margin: 30px;
     display: flex;
@@ -127,8 +127,7 @@ a span {
     height: 16px;
 }
 
-input[type=submit],
-button {
+input[type=submit] {
     width: 100%;
     border-radius: 14px;
     height: 40px;
@@ -139,9 +138,10 @@ button {
     font-family: Stem;
     font-style: normal;
     font-weight: 500;
+    transition: box-shadow 0.1s ease-in;
 }
 
-.button-login-google {
+button {
     width: 100%;
     border-radius: 14px;
     height: 40px;
@@ -152,10 +152,21 @@ button {
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
+    transition: box-shadow 0.1s ease-in;
 }
 
-.button-login-google span {
+button span {
     color: #595F69;
+}
+
+input[type=submit]:hover,
+button:hover {
+    border-color: #b3d7ff;
+}
+
+input[type=submit]:active,
+button:active {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 .container-between {
@@ -244,9 +255,7 @@ input[type=checkbox]+span:active:before {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-input[type=text],
-input[type=email],
-input[type=password] {
+input {
     height: 40px;
     border-radius: 14px;
     background-color: white;
