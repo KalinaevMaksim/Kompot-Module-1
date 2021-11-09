@@ -62,9 +62,8 @@ body {
     width: 100%;
 }
 
-.illustration {
+img {
     width: 80%;
-    max-width: 580px;
 }
 
 .rectangle {
@@ -102,7 +101,6 @@ h4 {
 span {
     font-family: Stem;
     font-style: normal;
-    font-weight: normal;
     font-weight: 500;
     font-size: 15px;
     color: #8A9099;
@@ -262,6 +260,11 @@ input {
     border-color: #E8E9EB;
     border-style: solid;
     font-family: Stem;
+}
+
+input:focus {
+    outline: none;
+    border-color: #304FFD;
 }
 
 @media only screen and (max-width: 375px) {
